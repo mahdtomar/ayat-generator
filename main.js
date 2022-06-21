@@ -1,4 +1,6 @@
 const btn = document.getElementById("btn");
+const screen = document.querySelector(".screen")
+console.log(screen)
 btn.onclick = function generateRandomeAyah() {
   const request = new XMLHttpRequest();
 
@@ -27,7 +29,7 @@ btn.onclick = function generateRandomeAyah() {
       ayahText.appendChild(ayahTextNode);
       ayahDiv.appendChild(ayahText);
 
-      document.body.appendChild(ayahDiv);
+      screen.appendChild(ayahDiv);
     }
   };
 };
